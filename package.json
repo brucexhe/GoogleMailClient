@@ -1,0 +1,24 @@
+{
+  "name": "GGmail",
+  "version": "1.0.0",
+  "description": "A google mail client based on electron.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "electron .",
+    "build": "electron-packager ./ GGmail --platform=darwin --arch=x64 --out ./outApp --overwrite --icon=favicon.icns"
+  },
+  "author": "BruceHe",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.1.0",
+    "electron-installer-dmg": "^4.0.0",
+    "electron-packager": "^16.0.0",
+    "electron-reloader": "^1.2.3"
+  },
+  "dependencies": {
+    "blueimp-md5": "^2.19.0",
+    "jquery": "^1.12.4",
+    "moment": "^2.29.4"
+  }
+}
