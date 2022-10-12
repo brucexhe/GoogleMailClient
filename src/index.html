@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "UTF-8">
+      <title>GGmail</title>
+   </head>
+   
+   <body>
+      <div>111
+         <webview id = "foo" src = "https://blog.peos.cn" style ="width:1440px; height:800px;">
+            <div class = "indicator"></div>
+         </webview>
+      </div>
+      
+      <script type = "text/javascript">
+        const $ = require('jquery');
+         // Event handlers for loading events.
+         // Use these to handle loading screens, transitions, etc
+         onload = () => {
+            const webview = document.getElementById('foo')
+            const indicator = document.querySelector('.indicator')
+
+            const loadstart = () => {
+               indicator.innerText = 'loading...'
+            }
+
+            const loadstop = () => {
+               indicator.innerText = ''
+            }
+
+            //webview.addEventListener('did-start-loading', loadstart)
+            //webview.addEventListener('did-stop-loading', loadstop)
+         }
+      </script>
+   </body>
+</html>
